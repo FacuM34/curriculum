@@ -1,0 +1,120 @@
+* {  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.body { 
+  justify-content: center;
+  align-items: center;
+  background-color: #ebe7f0;
+}
+
+.gridcontenedor {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr; 
+  grid-template-rows: 5% 90% 5%;
+  width: 80%;
+  height: 1000px;
+  background-color: rgb(173, 148, 189);
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+
+  /* Comienzo cabecera */
+
+ .gridcabecera {
+  display: grid ;
+  grid-column: 1/4;
+  background-color: #6e2a9be6;
+  }
+
+  .navegador {
+    background-color: #634aa7;
+    width: 80%;
+    position: fixed;
+    z-index: 100;
+  }
+  
+
+  nav {
+    float: left; 
+    padding-left: 30px;
+}
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-size: 16px;
+  }
+  
+  nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navegador nav ul li:hover {
+    background: #9d89d4;
+}
+
+@media (max-width: 600px) {
+    nav {flex-direction: column;}
+    nav ul li a {font-size: small; padding: 5px;}
+    }
+   
+.gridfooter {
+  grid-column: 1/4;
+  border: 2px solid black;
+
+}
+
+.gridizquierda {
+  grid-column: 1/2;
+  position: initial;
+  border: 2px solid black;
+}
+
+.gridcentro {
+  display: grid;
+  grid-column: 2/3;
+  border: 2px solid black;
+}
+
+.gridderecha {
+  display: grid;
+  grid-column: 3/4;
+  border: 2px solid black;
+}
+
+.foto img{
+  width: 100%;
+  height: 100%;
+  border: 2px solid blue;
+}
+@supports(object-fit: contain){
+    .foto img{
+      height: 50%;
+      object-fit: contain;
+      object-position: center;
+      
+    }
+}
+
+.gridizquierda .nombre h1 {
+  border: 2px solid blue;
+  ;
+ } 
+ 
+h1 {text-align: center;}
+h2 {text-align: center;}
+  
+
+
+
+
+
